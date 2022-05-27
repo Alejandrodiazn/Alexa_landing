@@ -6,7 +6,7 @@ export const Nav = styled.nav`
     background: #F5F5F5;
     height: 60px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     padding: 0.5rem calc((100vw - 1000px) / 2);
     z-index: 10;
 `
@@ -20,6 +20,7 @@ export const NavLink = styled(Link)`
     height: 100%;
     cursor: pointer;
     font-size: 0.98rem;
+    
 
     &.active {
         color: #15cdfc;
@@ -56,6 +57,7 @@ export const NavBtn = styled.nav`
     display: flex;
     align-items: center;
     margin-right: 24px;
+    margin-left: 45px;
 
     @media screen and (max-width: 768px) {
         display: none;

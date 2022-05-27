@@ -7,12 +7,9 @@ const Navbar = () => {
   return (
     <>
         <Nav>
-            <NavLink to="/">
-                <img></img>
-            </NavLink>
             <Bars />
             <NavMenu>
-              <NavLink to="/inicio" activeStyle>
+              <NavLink to="/Inicio" activeStyle>
                 Inicio
               </NavLink>
               <NavLink to="/nosotros" activeStyle>
