@@ -10,7 +10,6 @@ const Card = (props) =>
         <li>{props.el2}</li>
         <li>{props.el3}</li>
         <li>{props.el4}</li>
-        <li>{props.el4}</li>
     </ul>
   </div>
 </div>
