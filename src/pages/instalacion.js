@@ -1,15 +1,19 @@
 import React from "react";
 import styled from 'styled-components'
+import BannerCD from "../components/BannerCD";
+import MiddleCard from "../components/MiddleCard"
+import ImageCD from "../components/ImageCD";
 
 function Instalacion() {
   return (
     
     <>
       <div>
-        <p>Hola mundo</p>
+        <BannerCD></BannerCD>
       </div>
       <MasterBox>
-
+        <ImageCD></ImageCD>
+        <MiddleCard titulo={"Sobre nosotros"}></MiddleCard>
       </MasterBox>
     </>
     
