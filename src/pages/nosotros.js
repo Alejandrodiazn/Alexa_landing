@@ -30,7 +30,6 @@ const Section5 = styled.div`
     display: flex;
     width: 100%;
     flex-drection: row;
-
     @media (max-width: 768px) {
         width: 100%;
         flex-direction: column;
