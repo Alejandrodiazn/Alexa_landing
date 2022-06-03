@@ -1,15 +1,35 @@
-import React from 'react'
-
-
+import React from "react";
+import styled from 'styled-components'
+import BottomCard from "../components/BottomCard";
+import BottomCard2 from "../components/BottomCard2";
+import BannerCD from "../components/BannerCD";
 function Nosotros() {
   return (
-    <div style={{
-      display: 'flex', 
-      justifyContent:'center', 
-      alignItems:'center'}}>
-        <h2>Hola mundo</h2>
-    </div>
-  )
+    
+    <>
+      <div>
+        <BannerCD></BannerCD>
+      </div>
+      <MasterBox>
+        <BottomCard titulo={"¿Quiénes somos?"}>
+        </BottomCard>
+        <BottomCard2 titulo={"Un equipo multidisciplinario"}></BottomCard2>  
+      </MasterBox>
+    </>
+    
+  );
 }
 
-export default Nosotros
+export default Nosotros;
+
+const MasterBox = styled.div`
+    display: flex;
+    width: 100%;
+    flex-drection: row;
+    
+    @media (max-width: 768px) {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+`
