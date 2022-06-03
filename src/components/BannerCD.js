@@ -12,6 +12,8 @@ const MasterBox = styled.div`
     width: 100%;
     height: 400px;
     background-color: #FCFC;
+
+    
     
     @media (max-width: 768px) {
         
