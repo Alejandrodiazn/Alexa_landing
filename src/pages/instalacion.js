@@ -1,15 +1,15 @@
 import React from "react";
 import styled from 'styled-components'
 
-import BannerCD from "../components/BannerCD";
 function Instalacion() {
   return (
     
     <>
       <div>
-        <BannerCD></BannerCD>
+        <p>Hola mundo</p>
       </div>
       <MasterBox>
+
       </MasterBox>
     </>
     
