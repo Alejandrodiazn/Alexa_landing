@@ -9,8 +9,10 @@ function Nosotros() {
     <>
       <div>
         <BannerCD></BannerCD>
+        <p>ESTO ES UNA PRUEBA</p>
       </div>
       <MasterBox>
+        
         <BottomCard titulo={"¿Quiénes somos?"}>
         </BottomCard>
         <BottomCard2 titulo={"Un equipo multidisciplinario"}></BottomCard2>  
