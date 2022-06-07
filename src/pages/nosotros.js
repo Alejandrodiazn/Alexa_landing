@@ -5,12 +5,22 @@ import BottomCard2 from "../components/BottomCard2";
 import MiddleCard from "../components/MiddleCard";
 import BannerCD from "../components/BannerCD";
 import ImageCD from "../components/ImageCD";
+import Card from '../components/Card';
+import TalkCard from '../components/TalkCard';
 
 function Nosotros() {
   return (
-    
     <>
-      
+      <Section3>
+        <TalkCard></TalkCard>
+        <Card titulo={"Fácil y accesible para todos"} 
+        el1={"Una skill con contenido dinamico"}
+        el2={"Podrás estudiar sobre todas las areas básicas de conocimiento"}
+        el3={"Te permitirá familiarizarte con el examen"}
+        el4={"Tendrás la disponibilidad para estudiar a cualquier hora del día"}/>
+      </Section3>
+
+
       <Section4>
         <Innersection4>
           <ImageCD></ImageCD>
@@ -33,6 +43,28 @@ function Nosotros() {
 }
 
 export default Nosotros;
+
+const Section3 = styled.div`
+    display: flex;
+    flex-drection: row;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 20px;
+
+    @media (max-width: 1000px) {
+      width: 100%;
+      gap: 0px;
+    }
+
+
+
+    @media (max-width: 768px) {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+`
 const Section4 = styled.div`
   display: flex;
   justify-content: center;
@@ -67,9 +99,6 @@ const Section4 = styled.div`
         flex-direction: column;
       }
     `
-
-
-
 const Section5 = styled.div`
     display: flex;
     justify-content: center;
@@ -80,9 +109,6 @@ const Section5 = styled.div`
         align-items: center;
     }
 `
-
-
-
 const Section6 = styled.div`
     display: flex;
     flex-drection: row;

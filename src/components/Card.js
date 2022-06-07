@@ -27,6 +27,7 @@ const Title = styled.h2`
 `
 const Elista = styled.li`
   color: #646464;
+  margin-top: 35px;
   font-size: 1.25rem;
   @media (max-width: 768px) {
     font-size: 1rem;
