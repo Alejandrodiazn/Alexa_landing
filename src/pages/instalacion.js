@@ -22,16 +22,24 @@ const MasterBox = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 30px;
+  padding: 40px;
   background: linear-gradient(94.68deg, #5974EC 0%, #B968A4 100.6%);
+  
+  @media (max-width: 768px) {
+    padding: 0;
+  }
 `;
 
 const Box = styled.div`
   display: flex;
-  width: 100%;
   flex-drection: row;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
 
   @media (max-width: 768px) {
+    width: 100%;
     flex-direction: column;
-    align-items: center;
   }
 `;

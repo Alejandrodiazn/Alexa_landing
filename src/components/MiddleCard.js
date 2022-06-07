@@ -48,6 +48,7 @@ const MasterBox = styled.div`
   width: calc(90.55% / 2);
   height: auto;
   margin auto 0;
+  width: 50%;
 
   @media (max-width: 768px) {
     align-items: center;

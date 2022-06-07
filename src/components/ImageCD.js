@@ -11,4 +11,5 @@ export default ImageCD
 
 const Box = styled.div`
   padding: 30px 40px;
+  width: 50%;
 `
