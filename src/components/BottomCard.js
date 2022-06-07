@@ -48,6 +48,9 @@ const MasterBox = styled.div`
     width: calc(90.55%/2);
     height: auto;
     background-color: #FCFCFC;
+    @media (max-width: 1000px) {
+      padding: 10px 33px;
+    }
     
     @media (max-width: 768px) {
         width: 90%;

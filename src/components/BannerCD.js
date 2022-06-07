@@ -18,11 +18,11 @@ const MasterBox = styled.div`
     
     @media (max-width: 768px) {
         height: 300px;
-        padding: 10px 33px;
+        padding: 10px 0px;
     }
     @media (max-width: 400px){
-        padding: 10px 33px;
-        height: 150px;
+        padding: 20px 0px;
+        height: 250px;
     }
 `
 
