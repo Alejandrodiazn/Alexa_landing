@@ -56,8 +56,6 @@ const Section3 = styled.div`
       gap: 0px;
     }
 
-
-
     @media (max-width: 768px) {
         width: 100%;
         flex-direction: column;

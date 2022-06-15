@@ -89,10 +89,12 @@ const MasterBox = styled.div`
     }
     @media (max-width: 768px) {
         width: 90%;
+        align-items: center;
     }
     @media (max-width: 400px){
         padding: 10px 33px;
     }
+
 `
 const Box1 = styled.div`
     display: flex;
