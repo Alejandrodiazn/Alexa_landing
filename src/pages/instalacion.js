@@ -1,15 +1,15 @@
 import React from "react";
 import styled from "styled-components";
-import MiddleCard from "../components/MiddleCard";
-import ImageCD from "../components/ImageCD";
+import ExcobaCard from "../components/ExcobaCard";
+import ImageExcoba from "../components/ImageExcoba";
 
 function Instalacion() {
   return (
     <>
       <MasterBox>
         <Box>
-          <ImageCD></ImageCD>
-          <MiddleCard titulo={"Sobre nosotros"}></MiddleCard>
+          <ExcobaCard titulo={"La discapacidad visual ya no es un límite para tus estudios"}></ExcobaCard>
+          <ImageExcoba></ImageExcoba>
         </Box>
       </MasterBox>
     </>
@@ -24,7 +24,6 @@ const MasterBox = styled.div`
   align-items: center;
   margin: 30px;
   padding: 40px;
-  background: linear-gradient(94.68deg, #5974EC 0%, #B968A4 100.6%);
   
   @media (max-width: 768px) {
     padding: 0;
@@ -35,7 +34,7 @@ const Box = styled.div`
   display: flex;
   flex-drection: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   width: 60%;
 
   @media (max-width: 768px) {
