@@ -1,7 +1,8 @@
 import React from 'react';
 import {Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink} from './NavElements'
 
-//INDEX NAVBAR
+
+//INDEX NAVBAR & COMPONENTES
 
 const Navbar = () => {
   return (
@@ -26,8 +27,10 @@ const Navbar = () => {
               <NavBtnLink to="/Probar ahora">Probar ahora</NavBtnLink>
             </NavBtn>
         </Nav>
+        
     </>
   )
 }
 
 export default Navbar
+

@@ -1,8 +1,11 @@
 import React from "react";
 import styled from 'styled-components';
-import voice1 from "../assets/img/cardalexa/voice1.svg";
-import voice2 from "../assets/img/cardalexa/voice2.svg";
-import voiceffect from "../assets/img/cardalexa/image_voice.png";
+import voice1 from "../../assets/img/cardalexa/bubble1.svg";
+import voice2 from "../../assets/img/cardalexa/bubble2.svg";
+import voice3 from "../../assets/img/cardalexa/bubble3.svg";
+import voice4 from "../../assets/img/cardalexa/bubble4.svg";
+
+import voiceffect from "../../assets/img/cardalexa/image_voice.png";
 
 const TalkCard = () => 
 <MasterBox>
@@ -11,28 +14,24 @@ const TalkCard = () =>
     </Box1>
     <Box2>
         <BurbujaContainer>
-            <BurbujaText>Alexa ábre la skill de <Enfasis>'examen excoba'</Enfasis></BurbujaText>
-            <img src={voice1}/>
+            <Imagen13 src={voice1}/>
         </BurbujaContainer>
 
         <BurbujaContainer2>
-            <BurbujaText>Bienvenidx a la skill de examen  <Enfasis>'examen excoba'</Enfasis> ¿Comenzamos tu prueba? </BurbujaText>
-            <img src={voice2}/>
+            <Imagen24 src={voice2}/>
         </BurbujaContainer2>
 
         <BurbujaContainer>
-            <BurbujaText>Por supuesto que si, estoy listo</BurbujaText>
-            <img src={voice1}/>
+            <Imagen13 src={voice3}/>
         </BurbujaContainer>
 
         <BurbujaContainer2>
-            <BurbujaText>Pregunta 1, Escucha el siguiente texto sobre los incas y responde.</BurbujaText>
-            <img src={voice2}/>
+            <Imagen24 src={voice4}/>
         </BurbujaContainer2>
     </Box2>
     
     <Box3>
-        <img src={voiceffect}/>
+        <Imagenvoice src={voiceffect}/>
     </Box3>
 </MasterBox>
 
@@ -49,28 +48,54 @@ const Title = styled.h2`
     font-size: 1rem;
   }
 `
-const Enfasis = styled.span`
-    color: #0EB1F8;
-`
-const BurbujaText = styled.p`
-    position: absolute;
-    top: 12%;
-    font-size: 15px;
-`
-
 
 
 //Propiedades containers
 
+const Imagenvoice = styled.img`
+
+
+`
+
+
+const Imagen24 = styled.img`
+    width: 240px;
+    @media (max-width: 1100px) {
+        width: 200px;
+    }
+    @media(max-width: 900px){
+        width: 190px;
+    }
+    
+    @media (max-width: 850px) {
+        width: 180px;
+    }
+
+    @media (max-width: 800px) {
+        width: 170px;
+    }
+`
+const Imagen13 = styled.img`
+    width: 200px;
+    @media (max-width: 1100px) {
+        width: 160px;
+    }
+    @media(max-width: 900px){
+        width: 150px;
+    }
+    @media (max-width: 850px) {
+        width: 140px;
+    }
+`
 const BurbujaContainer = styled.div`
     position: relative;
-    display: inline-block;
-    text-align: center;
+    left: -50%;
+    width: auto;
 `
 const BurbujaContainer2 = styled.div`
     position: relative;
-    display: inline-block;
-    text-align: center;
+    right: -50%;
+    width: auto;
 `
 const MasterBox = styled.div`
     display: flex;

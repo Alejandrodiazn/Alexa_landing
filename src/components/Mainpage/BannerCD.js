@@ -1,6 +1,6 @@
 import React from "react";
 import styled from 'styled-components'
-import cd_foto from "../assets/img/foto_cd.jpg"
+import cd_foto from "../../assets/img/foto_cd.jpg"
 
 const BannerCD = () => 
 <MasterBox>

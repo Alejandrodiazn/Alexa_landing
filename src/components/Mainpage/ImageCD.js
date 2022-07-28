@@ -1,6 +1,6 @@
 import React from "react";
 import styled from 'styled-components';
-import Centro_de_Desarrollo from "../assets/img/Centro_de_Desarrollo.svg"
+import Centro_de_Desarrollo from "../../assets/img/Centro_de_Desarrollo.svg"
 
 const ImageCD = (props) =>
 <Box>

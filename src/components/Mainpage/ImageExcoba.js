@@ -1,6 +1,6 @@
 import React from "react";
 import styled from 'styled-components';
-import Image_Excoba from "../assets/img/cardskill/Image_Excoba.png"
+import Image_Excoba from "../../assets/img/cardskill/Image_Excoba.png"
 
 const ImageExcoba = () =>
 <Box>
@@ -24,8 +24,8 @@ const Imagen = styled.img`
   @media (max-width: 768px) {
     width: 180px;
     margin-top: 20px;
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 65%;
+    max-height: 65%;
   }
 
 `
