@@ -66,19 +66,38 @@ export const NavBtn = styled.nav`
         display: none;
     }
 `
-export const NavBtnLink = styled(Link)`
-    border-radius: 15px;
+
+export const Buton = styled.button`
+    display: flex;
+    align-items: center;
+    margin-right: 24px;
+    margin-left: 45px;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+    border-radius: 50px;
     background: linear-gradient(#3138E5, #239DFF);
-    padding: 10px 30px;
+    padding: 10px 25px;
     color: #fff;
     border: none;
     outline: none;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
     text-decoration: none;
-    
+
     &:hover {
         background: rgba(36,149,253,0.4);
         color: #fff;
     }
+
+`
+
+
+export const Testnow = styled.a`
+  text-decoration:none;
+  color: #ffffff;
+  font-size: 1rem;
+
 
 `

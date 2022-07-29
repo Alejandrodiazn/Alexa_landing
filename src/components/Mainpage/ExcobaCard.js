@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { NavLink as Link } from 'react-router-dom'
+
 import ImageExcoba from "./ImageExcoba.js";
 
 const ExcobaCard = (props) => (
@@ -16,7 +16,7 @@ const ExcobaCard = (props) => (
           <Parrafo>Con ayuda de centro de desarrollo de la facultad de informática de la uaq.</Parrafo>
         </div>
         <div>
-          <Boton>Leer más</Boton>
+          <Boton><Testnow target="_blank" href="https://www.uaq.mx/informatica/cede.html">Leer más</Testnow></Boton>
         </div>
       </BoxContent>
     </MasterBox>
@@ -82,7 +82,6 @@ const Boton = styled.button`
   align-items: center;
   border: 1px solid #000000;
   border-radius: 25px;
-  font-size: 18px;
   padding:10px 28px;
   
   &:hover {
@@ -90,18 +89,8 @@ const Boton = styled.button`
     box-shadow: 1.98582px -0.992908px 3.97163px rgba(107, 107, 107, 1);
 `;
 
-const BtnLink = styled(Link)`
+const Testnow = styled.a`
+  text-decoration:none;
   color: #000000;
-  border-radius: 15px;
-  padding: 10px 30px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  text-decoration: none;
-    
-  &:hover {
-    transition: all 0.2s ease-in-out;
-    background: #E7E7E7;
-  }
-
-`;
+  font-size: 18px;
+`

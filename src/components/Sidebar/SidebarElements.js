@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 import {Link as LinkS} from 'react-scroll';
-import {Link as LinkR} from 'react-router-dom';
 import {FaTimes} from 'react-icons/fa';
 
 
@@ -70,22 +69,26 @@ export const SideBtnWrap = styled.div`
     justify-content: center;
 `
 
-export const SidebarRoute = styled(LinkR)`
-    border-radius: 50px;
-    background: linear-gradient(#3138E5, #239DFF);
-    white-space: nowrap;
-    padding: 16px 64px;
-    color: #010606;
-    font-size: 16px;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    transition: 0.2s ease-in-out;
-    text-decoration: none;
+export const Testnow = styled.a`
+  text-decoration:none;
+  color: #ffffff;
+  font-size: 1rem;
+`
 
-    &:hover{
-        transition: all 0.2s ease-in-out;
-        background: #fff;
-        color: #010606 ;
-    }
+export const Buton = styled.button`
+  border-radius: 50px;
+  background: linear-gradient(#3138E5, #239DFF);
+  padding: 10px 30px;
+  color: #fff;
+  border: none;
+  width: auto;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+
+  &:hover {
+      background: rgba(36,149,253,0.4);
+      color: #fff;
+  }
 `

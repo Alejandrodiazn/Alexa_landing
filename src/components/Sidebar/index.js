@@ -1,5 +1,5 @@
 import React from 'react'
-import { SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink, SideBtnWrap, SidebarRoute } from './SidebarElements'
+import { SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink, SideBtnWrap, Buton, Testnow } from './SidebarElements'
 
 const Sidebar = ({ isOpen, toggle }) => {
     return (
@@ -10,20 +10,20 @@ const Sidebar = ({ isOpen, toggle }) => {
         <SidebarWrapper >
             <SidebarMenu>
                 <SidebarLink to="about">
-                    About
+                    Inicio
                 </SidebarLink>
                 <SidebarLink to="about">
-                    Contact
+                    Nosotros
                 </SidebarLink>
                 <SidebarLink to="about">
-                    Home
+                    Instalación
                 </SidebarLink>
                 <SidebarLink to="about">
-                    another
+                    Acerca de
                 </SidebarLink>
             </SidebarMenu>
             <SideBtnWrap>
-                <SidebarRoute to="/singin">Sig in</SidebarRoute>
+                <Buton onClick={() => console.log('Click')}><Testnow target="_blank" href="https://www.amazon.com.mx/UAQ-Profesor-del-EXCOBA/dp/B0894WK995">Probar ahora</Testnow></Buton>
             </SideBtnWrap>
         </SidebarWrapper>
     </SidebarContainer>
@@ -32,3 +32,4 @@ const Sidebar = ({ isOpen, toggle }) => {
 }
 
 export default Sidebar
+

@@ -8,11 +8,14 @@ const MainCard = () =>
     <Box>
         <Titulo src={titulo}></Titulo>
         <Parrafo>Tú enfocate en estudiar y nosotros nos encargamos del reconocimiento automático del habla y de la comprensión del lenguaje natural para ir contestando las preguntas de nuestra guía</Parrafo>
-        <Buton onClick={() => console.log('Click')}>Probar ahora</Buton>
+        <Buton onClick={() => console.log('Click')}><Testnow target="_blank" href="https://www.amazon.com.mx/UAQ-Profesor-del-EXCOBA/dp/B0894WK995">Probar ahora</Testnow></Buton>
     </Box>
 </MasterBox>
 
 export default MainCard
+
+//
+
 
 //Propiedades de texto
 const Parrafo = styled.p`
@@ -91,12 +94,12 @@ const Titulo = styled.img`
 `
 
 const Buton = styled.button`
-  border-radius: 15px;
+  border-radius: 50px;
   background: linear-gradient(#3138E5, #239DFF);
   padding: 10px 30px;
   color: #fff;
   border: none;
-  width: 150px;
+  width: auto;
   outline: none;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
@@ -110,3 +113,10 @@ const Buton = styled.button`
 `
 
 
+const Testnow = styled.a`
+  text-decoration:none;
+  color: #ffffff;
+  font-size: 1rem;
+
+
+`

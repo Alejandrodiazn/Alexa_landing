@@ -1,5 +1,5 @@
 import React from 'react';
-import {Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink} from './NavElements'
+import {Nav, NavLink, Bars, NavMenu, NavBtn, Buton, Testnow } from './NavElements'
 
 
 //INDEX NAVBAR & COMPONENTES
@@ -23,9 +23,7 @@ const Navbar = ({ toggle }) => {
                 Acerca de
               </NavLink>
             </NavMenu>
-            <NavBtn>
-              <NavBtnLink to="/Probar ahora">Probar ahora</NavBtnLink>
-            </NavBtn>
+            <Buton><Testnow target="_blank" href="https://www.amazon.com.mx/UAQ-Profesor-del-EXCOBA/dp/B0894WK995">Probar ahora</Testnow></Buton>
         </Nav>
         
     </>
