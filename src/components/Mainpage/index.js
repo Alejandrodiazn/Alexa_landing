@@ -58,6 +58,7 @@ export default Mainpage
 
 
 const Section1 = styled.div`
+    margin-top: 60px;
     display: flex;
     @media (max-width: 1120px) {
     

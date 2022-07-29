@@ -4,11 +4,11 @@ import {Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink} from './NavElements'
 
 //INDEX NAVBAR & COMPONENTES
 
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
   return (
     <>
         <Nav>
-            <Bars />
+            <Bars onClick={toggle}/>
             <NavMenu>
               <NavLink to="/Inicio" activeStyle>
                 Inicio

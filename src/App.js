@@ -1,9 +1,10 @@
 
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 
 import Navbar from './components/Navbar';
 import Mainpage from './components/Mainpage';
+import Sidebar from './components/Sidebar';
 
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Inicio from './pages/index';
@@ -14,10 +15,18 @@ import Instalacion from './pages/instalacion';
 //APP JS PRINCIPAL DE LA PÁGINA
 
 function App() {
+   const [isOpen, setIsOpen] = useState (false);
+
+   const toggle = () => {
+    setIsOpen (!isOpen);
+   }
+
+
   return (
     <>
       <Router>
-        <Navbar/>
+        <Sidebar isOpen={isOpen} toggle={toggle}/>
+        <Navbar toggle= {toggle}/>
         <Routes>
           <Route path='/Inicio' element={<Inicio/>}></Route>
           <Route path='/Nosotros' element={<Nosotros/>}></Route>

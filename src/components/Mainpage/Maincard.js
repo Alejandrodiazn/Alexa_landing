@@ -8,7 +8,7 @@ const MainCard = () =>
     <Box>
         <Titulo src={titulo}></Titulo>
         <Parrafo>Tú enfocate en estudiar y nosotros nos encargamos del reconocimiento automático del habla y de la comprensión del lenguaje natural para ir contestando las preguntas de nuestra guía</Parrafo>
-        <Buton>Probar ahora</Buton>
+        <Buton onClick={() => console.log('Click')}>Probar ahora</Buton>
     </Box>
 </MasterBox>
 
@@ -103,7 +103,6 @@ const Buton = styled.button`
   text-decoration: none;
 
   &:hover {
-      transition: all 0.2s ease-in-out;
       background: rgba(36,149,253,0.4);
       color: #fff;
   }
