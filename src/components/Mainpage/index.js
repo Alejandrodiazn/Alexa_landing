@@ -10,6 +10,7 @@ import Card from './Card';
 import TalkCard from './TalkCard';
 import ExcobaCard from "./ExcobaCard";
 import MainCard from "./Maincard";
+import Footer from "./Footer";
 
 //INDEX NAVBAR & COMPONENTES
 
@@ -50,6 +51,10 @@ const Mainpage = () => {
           </BottomCard>
           <BottomCard2 titulo={"Un equipo multidisciplinario"}></BottomCard2>  
         </Section6>
+
+        <Section7>
+          <Footer></Footer>
+        </Section7>
     </>
   )
 }
@@ -179,4 +184,9 @@ const Section6 = styled.div`
         align-items: center;
         gap: 20px;
     }
+`
+
+const Section7 = styled.div`
+  width: 100%;
+  margin-top: 40px;
 `
