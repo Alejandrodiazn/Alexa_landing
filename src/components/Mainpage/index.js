@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+import { useRef } from 'react';
 
 import BottomCard from "./BottomCard";
 import BottomCard2 from "./BottomCard2";
@@ -14,10 +15,11 @@ import Footer from "./Footer";
 
 //INDEX NAVBAR & COMPONENTES
 
-const Mainpage = () => {
+const Mainpage = ({top, nosotros}) => {
+
   return (
     <>
-        <Section1>
+        <Section1 ref={top}>
           <MainCard></MainCard>
         </Section1>
 
@@ -46,7 +48,7 @@ const Mainpage = () => {
           <BannerCD></BannerCD>
         </Section5>
         
-        <Section6>
+        <Section6 ref={nosotros}>
           <BottomCard titulo={"¿Quiénes somos?"}>
           </BottomCard>
           <BottomCard2 titulo={"Un equipo multidisciplinario"}></BottomCard2>  

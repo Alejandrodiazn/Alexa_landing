@@ -14,12 +14,18 @@ const Box = styled.div`
   width: auto;
   height: auto;
   box-sizing: border-box;
+
+  @media (max-width: 400px) {
+    max-width: 80%;
+    max-height: 80%;
+  }
 `
 
 const Imagen = styled.img`
   padding: 0px;
-  max-width: 14rem;
-  max-height: 14rem;
+  max-width: 12rem;
+  max-height: 12rem;
+  align: middle
   
   @media (max-width: 768px) {
     width: 180px;

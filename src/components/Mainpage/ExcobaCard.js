@@ -5,9 +5,7 @@ import ImageExcoba from "./ImageExcoba.js";
 
 const ExcobaCard = (props) => (
     <MasterBox>
-      <div>
-        <ImageExcoba></ImageExcoba>
-      </div>
+      <ImageExcoba></ImageExcoba>
       <BoxContent>
         <div>
           <Title>{props.titulo}</Title>
@@ -48,8 +46,6 @@ const BoxContent = styled.div`
   flex-direction: column;
 `
 
-
-
 const Parrafo = styled.p`
 font-size: 1.25rem;
 color: #646464;
@@ -71,9 +67,6 @@ const Title = styled.h2`
     font-size: 1rem;
   }
 `;
-
-
-
 
 const Boton = styled.button`
   background-color: #FFFFFF;
