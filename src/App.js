@@ -21,12 +21,17 @@ function App() {
     setIsOpen (!isOpen);
    }
 
+   const DowntoNosotros= () => {
+    console.log("Esta funcionando en consola");
+   }
+
+
 
   return (
     <>
       <Router>
         <Sidebar isOpen={isOpen} toggle={toggle}/>
-        <Navbar toggle= {toggle}/>
+        <Navbar toggle= {toggle} DowntoNosotros= {DowntoNosotros}/>
         <Routes>
           <Route path='/Inicio' element={<Inicio/>}></Route>
           <Route path='/Nosotros' element={<Nosotros/>}></Route>

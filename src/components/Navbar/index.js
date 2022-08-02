@@ -1,10 +1,11 @@
 import React from 'react';
-import {Nav, NavLink, Bars, NavMenu, NavBtn, Buton, Testnow } from './NavElements'
+import {Nav, NavLink, Bars, NavMenu, Buton, Testnow } from './NavElements'
+import { Link } from "react-scroll";
 
 
 //INDEX NAVBAR & COMPONENTES
 
-const Navbar = ({ toggle }) => {
+const Navbar = ({ toggle, DowntoNosotros }) => {
   return (
     <>
         <Nav>
@@ -13,15 +14,21 @@ const Navbar = ({ toggle }) => {
               <NavLink to="/Inicio" activeStyle>
                 Inicio
               </NavLink>
-              <NavLink to="/Nosotros" activeStyle>
-                Nosotros
+              <NavLink to="Hooal" activeStyle>
+                <Link 
+                  to="/"
+                  spy={true}
+                  smooth={true}
+                  offset={-50}
+                  duration={500}
+                  onClick={DowntoNosotros}>
+                  Nosotros
+                </Link>
               </NavLink>
               <NavLink to="/instalacion" activeStyle>
                 Instalación
               </NavLink>
-              <NavLink to="/acerca_de" activeStyle>
-                Acerca de
-              </NavLink>
+
             </NavMenu>
             <Buton><Testnow target="_blank" href="https://www.amazon.com.mx/UAQ-Profesor-del-EXCOBA/dp/B0894WK995">Probar ahora</Testnow></Buton>
         </Nav>

@@ -1,5 +1,6 @@
 {
   "name": "alexa_landing",
+  "homepage": "https://portalinformatica.uaq.mx/aviuaq",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
