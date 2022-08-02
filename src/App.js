@@ -21,21 +21,29 @@ function App() {
     setIsOpen (!isOpen);
    }
 
-   const DowntoNosotros= () => {
-    console.log("Esta funcionando en consola");
+   const ToptoInicio= ()=> {
+    console.log("Anclado a Inicio")
    }
 
+   const DowntoNosotros= () => {
+    console.log("Anclado a nosotros");
+   }
+
+   const LinktoInstalar= () => {
+    console.log("Enrutado a instalar");
+    window.open("https://youtu.be/3nGe193gbmo")
+   }
 
 
   return (
     <>
       <Router>
         <Sidebar isOpen={isOpen} toggle={toggle}/>
-        <Navbar toggle= {toggle} DowntoNosotros= {DowntoNosotros}/>
+        <Navbar ToptoInicio={ToptoInicio} toggle= {toggle} DowntoNosotros= {DowntoNosotros} LinktoInstalar={LinktoInstalar}/>
         <Routes>
           <Route path='/Inicio' element={<Inicio/>}></Route>
-          <Route path='/Nosotros' element={<Nosotros/>}></Route>
-          <Route path='/Instalacion' element={<Instalacion/>}></Route>
+          <Route  path='/Nosotros' element={<Nosotros/>}></Route>
+          <Route   path='/Instalacion' element={<Instalacion/>}></Route>
         </Routes>
       </Router>
       <Mainpage/>
